@@ -1,14 +1,45 @@
-name: Diwakar Singh
+# Day 1
+# name: Diwakar Singh
 
-on:
- push:
-  branches: [main]
+# on:
+#  push:
+#   branches: [main]
 
+# jobs:
+#   demo:
+#    runs-on: ubuntu-latest
+
+#    steps:
+#      - name: Greeting
+#        run: echo "hello diwakar"
+ 
+# Day 2
+name: Schedule Job
+
+on: 
+ schedule:
+   - cron:  '16 10 * * *'
 jobs:
-  demo:
+  run-script:
    runs-on: ubuntu-latest
 
    steps:
-     - name: Greeting
-       run: echo "hello diwakar"
- 
+     - name: Print Message
+       run: echo "Schedule Workflow Executed"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
